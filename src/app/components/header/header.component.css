@@ -7,3 +7,8 @@ a img {
     height: 45px;
     border-radius: 15px;
 }
+
+.alineacion{
+    display: flex;
+    align-items: end;
+}
