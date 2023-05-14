@@ -1,12 +1,15 @@
 .uno{
-    margin-top: 1cm;
     margin-bottom: 2cm;
+    padding-bottom: 1cm;
+    border: 3px solid rgb(68, 36, 248);
+    border-radius: 10px;
 }
 
 .presentacion{
     height: 200px;
     width: 400px;
-    margin-left: 8cm;
+    margin-left: 5cm;
+    margin-right: 2cm;
     margin-top: 3cm;
 }
 

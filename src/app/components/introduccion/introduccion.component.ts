@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { Component , OnInit} from '@angular/core';
+import { Persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-introduccion',
   templateUrl: './introduccion.component.html',
   styleUrls: ['./introduccion.component.css']
 })
-export class IntroduccionComponent {
-  introduccion:string = "Hola soy Gonzalo, creé este espacio para que puedan conocerme rápidamente y ver algún que otro proyecto que realicé, espero sea de su agrado y que tengan excelente día!";
-  nombre:string = "Vaschchuk Gonzalo Gabriel";
+
+export class IntroduccionComponent implements OnInit{
+
+  persona: Persona = new Persona("","","","");
+
+  constructor(public personaService: PersonaService){}
+
+  ngOnInit(): void {
+    this.personaService.getPersona().subscribe(data => {this.persona = data})
+  }
+
 }

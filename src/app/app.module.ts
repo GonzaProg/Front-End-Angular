@@ -8,6 +8,7 @@ import { AptitudesComponent } from './components/aptitudes/aptitudes.component';
 import { MisProyectosComponent } from './components/mis-proyectos/mis-proyectos.component';
 import { FinalComponent } from './components/final/final.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EstudiosComponent } from './components/estudios/estudios.component';
     EstudiosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
