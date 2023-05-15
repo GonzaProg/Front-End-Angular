@@ -8,7 +8,7 @@ import { RedSocial } from '../model/redSocial.model';
 })
 
 export class RedSocialService {
-  URL = 'https://mi-portfolio2-0.onrender.com/redesSociales/';
+  URL = 'https://mi-portfolio4-0.onrender.com/redesSociales/';
 
   constructor(private http: HttpClient) { }
 

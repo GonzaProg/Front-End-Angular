@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyecto.model';
 })
 
 export class ProyectoService {
-  URL = 'https://mi-portfolio2-0.onrender.com/proyectos/';
+  URL = 'https://mi-portfolio4-0.onrender.com/proyectos/';
 
   constructor(private http: HttpClient) { }
 

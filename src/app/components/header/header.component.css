@@ -12,3 +12,18 @@ a img {
     display: flex;
     align-items: end;
 }
+
+.btn-bootstrap {
+    padding: .375rem .75rem;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: #9014ca;
+    color: #000000;
+    transition: background-color .15s ease-in-out;
+    border-color: blue;
+  }
+
+  h5{
+    margin-left: 10px;
+    color: #000000;
+  }

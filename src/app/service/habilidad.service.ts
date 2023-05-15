@@ -8,7 +8,7 @@ import { Habilidad } from '../model/habilidad.model';
 })
 
   export class HabilidadService {
-    URL = 'https://mi-portfolio2-0.onrender.com/habilidades/';
+    URL = 'https://mi-portfolio4-0.onrender.com/habilidades/';
   
     constructor(private http: HttpClient) { }
   

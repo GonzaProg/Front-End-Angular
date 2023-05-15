@@ -1,9 +1,17 @@
 <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <a target="_blank" class="redes" href={{redSocialInstagram.urlSitioWeb}}><img src={{redSocialInstagram.urlImagen}} alt="Icono de Instagram"></a>
-              <a target="_blank" class="redes" href={{redSocialFacebook.urlSitioWeb}}><img src={{redSocialFacebook.urlImagen}} alt="Icono de Facebook"></a>
-              <a target="_blank" class="redes" href={{redSocialTwitter.urlSitioWeb}}><img src={{redSocialTwitter.urlImagen}} alt="Icono de Twitter"></a>
-          </div>
-    </nav>
-    </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <h5 *ngIf="!isLogged">Usted no se encuentra Logeado</h5>
+            <h5 *ngIf="isLogged">Usted se encuentra Logeado</h5>
+            <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <a target="_blank" class="redes" href={{redSocialInstagram.urlSitioWeb}}><img
+                              src={{redSocialInstagram.urlImagen}} alt="Icono de Instagram"></a>
+                  <a target="_blank" class="redes" href={{redSocialFacebook.urlSitioWeb}}><img
+                              src={{redSocialFacebook.urlImagen}} alt="Icono de Facebook"></a>
+                  <a target="_blank" class="redes" href={{redSocialTwitter.urlSitioWeb}}><img
+                              src={{redSocialTwitter.urlImagen}} alt="Icono de Twitter"></a>
+                  <button type="button" class="btn-bootstrap" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+                  <button type="button" class="btn-bootstrap" (click)="onLogOut()" *ngIf="isLogged">Cerrar
+                        Sesión</button>
+            </div>
+      </nav>
+</div>

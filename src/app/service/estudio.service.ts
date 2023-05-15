@@ -8,7 +8,7 @@ import { Estudio } from '../model/estudio.model';
 })
 
 export class EstudioService {
-  URL = 'https://mi-portfolio2-0.onrender.com/estudios/';
+  URL = 'https://mi-portfolio4-0.onrender.com/estudios/';
 
   constructor(private http: HttpClient) { }
 
